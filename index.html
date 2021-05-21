@@ -1,0 +1,186 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pisithpong Saeung</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="stopwatch.css" rel="stylesheet" type="text/css" />
+    <link href="music.css" rel="stylesheet" type="text/css" />
+    <link href="phone.css" rel="stylesheet" type="text/css" />
+    <link href="pomodoro.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/44a29f837f.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="stopwatch.js" defer></script>
+    <script src="music.js" defer></script>
+    <script src="pomodoro.js" defer></script>
+    
+  </head>
+  <body>
+    <section>
+    <div class="banner">
+    <div>
+    <nav>
+      <input id="sidenav" type="checkbox">
+      <div class="name">Student Helper</div>
+      <ul class="links">
+        <li><a href="#">Task</a></li>
+        <li><a href="#stopwatch">Stopwatch</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Kanban</a></li>
+        <li><a href="#">Pomodoro</a></li>
+        <li><a href="#">Dictionary</a></li>
+  	  </ul>
+  	  <label for="sidenav" class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+    <div class="heading">
+      <h1>Student Helper</h1>
+      <p>Having a difficult time studying?</p>
+    <div>
+      <button type="explore"><span></span>Explore now</button>
+    </div>
+    </div>
+    </section>
+
+    <div class="cards">
+  <div class="card"><h1>Task Manager</h1><br></div>
+
+
+<section id= "stopwatch">
+  <div class="card">
+    <h1>Stopwatch</h1><br>
+    <div class="timescreen">
+      00 : 00 : 00 : 000
+    </div>
+    <div class="timecircle">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    </div>
+    <div class="timepro">
+      
+      <button id="startTime"><i class="material-icons">play_arrow</i></button>
+      <button id="pauseTime"><i class="material-icons">stop</i></button>
+      <button id="resetTime"><i class="material-icons">replay</i></button>
+      
+      
+    </div>
+  </div>
+  </section>
+
+
+<section id= "music">
+  <div class="card">
+    <h1>Music Player</h1><br>
+    <section class="musiccov">
+        <input type="checkbox" name="check" id="tick" value="None">
+        <label for="tick" class="main"></label>
+        <div class="search"></div>
+        <div class="playfunc"></div>
+        <div class="coverpage"></div>
+        <table class="tracks">
+            <tr class="song">
+                <td class="tracknum"><h1>3</h1></td>
+                <td class="title"><h1>Hello world<h1></td>
+                <td class="length"><h1>3:33<h1></td>
+                <td><input type="checkbox"  id="like1"><label for="like1" class="icons"></label></td>
+            </tr>
+            <tr class="song">
+                <td class="tracknum"><h1>2<h1></td>
+                <td class="title"><h1 style="color: cyan">Hi world</h1></td>
+                <td class="length"><h1>2:22<h1></td>
+                <td><input type="checkbox"  id="like2" checked><label for="like2" class="icons"></label></td>
+            </tr>
+            <tr class="song">
+                <td class="tracknum"><h1>1</h1></td>
+                <td class="title"><h1>Beautiful World<h1></td>
+                <td class="length"><h1>1:11<h1></td>
+                <td><input type="checkbox"  id="like3"><label for="like3" class="icons"></label></td>
+            </tr>
+          </table>
+          <div class="shadow"></div>
+        <div class="songdet">
+            <h1 style="color: grey">Hi world</h1>
+        </div>
+        <audio preload id="audio" controls>
+            <source src="music/HiWorld.mp3">
+        </audio>
+        <table class="controlfunc">
+            <td><input type="checkbox" id="back"><label for="back" class="back"></label></td>
+            <td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()"><label for="play" class="play"></label></td>
+            <td><input type="checkbox" id="next"><label for="next" class="next"></label></td>
+        </table>
+        <table class="buttoncontrol">
+           <td><input type="checkbox" id="like" checked ><label for="like" class="like"></label></td>
+            <td><input type="checkbox" id="loop"  ><label for="loop" class="loop"></label></td>
+            <td><input type="checkbox" id="shuffle" ><label for="shuffle" class="shuffle"></label></td>
+          </table>
+        <div class="playing"><h1 style="color: cyan">Hi world</h1></div>
+    </section>
+  </div>
+</section>
+
+
+
+
+  <div class="card"><h1>Kanban Board</h1><br></div>
+  <div class="card">
+    <section id= "pomodorotimer">
+    <div class="pomodoroframe">
+  <h1>Pomodoro Timer</h1><br>
+  
+  <div id="pomodoro">  
+    <div class="pomodorocover"></div>
+    <div id="state"></div>
+    <div class="pmdtime">25:00</div>
+    <button id="start-btn" class="btn">START</button>
+  </div>
+  <div class="edittime">
+    <div id="focus">
+      <p>Focus Time</p>
+      <button class="btn-edittime" id="focus-add">+</button>
+      <div><span id="focus-min">25</span> mins</div>
+      <button class="btn-edittime" id="focus-sub">-</button>
+    </div>
+    <div id="break">
+      <p>Short Break</p>
+      <button class="btn-edittime" id="break-add">+</button>
+      <div><span id="break-min">5</span> mins</div>
+      <button class="btn-edittime" id="break-sub">-</button>
+    </div>
+    <div id="lbk">
+      <p>Long Break</p>
+      <button class="btn-edittime" id="lbk-add">+</button>
+      <div><span id="lbk-min">30</span> mins</div>
+      <button class="btn-edittime" id="lbk-sub">-</button>
+    </div>
+  </div>
+  </div>
+  <button id="reset" class="btn">Reset</button>
+</div>
+
+
+</section>
+
+  <div class="card"><h1>Dictionary</h1><br></div>
+  </div>
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+</html>

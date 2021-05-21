@@ -1,0 +1,59 @@
+@media screen and (max-width: 800px) {
+	nav .name {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+    background-color: rgba(0,0,0,0.7);
+		overflow: hidden;
+    justify-content: space-evenly;
+		float: none;
+		position: fixed;
+		z-index: 9;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		box-sizing: border-box;
+    left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		transition: all 1s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .burger {
+		display: block;
+	}
+	nav :checked ~ .burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	.timescreen{
+    position: center;
+    width: relative;
+    height:10%;
+    padding: 50px 20px;
+    color: white;
+    font-size: 20px;
+    font-family: comic sans MS;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+  }
+  .pdmtime{
+    font-size:5px;
+  }
+
+  
+}
