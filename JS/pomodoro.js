@@ -80,7 +80,7 @@ for (var key in stepFunctions) {
 }
 
 const alarm = document.createElement('audio');
-alarm.setAttribute("src","music/sound.mp3")
+alarm.setAttribute("src","/music/sound.mp3")
 
 function updateHTML() {
   countdownDisplay();

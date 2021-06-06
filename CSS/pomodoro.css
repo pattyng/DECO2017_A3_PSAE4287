@@ -1,3 +1,7 @@
+*{
+  font-family:comic sans MS;
+}
+
 html {
   text-align: center;
   min-width: auto;
@@ -64,24 +68,46 @@ html {
   box-shadow: 0 0 10px 5px rgba(196, 172, 39, 0.4);
 }
 
+#start-btn:hover{
+  color:rgb(196, 172, 39);
+  border-color:rgb(196, 172, 39);
+  background:transparent;
+  transition:0.5s;
+}
+
 #reset {
   background: #c4ac26;
   border-radius: 50px;
   width: 80px;
-  height: 40px;
+  height: 30px;
   transform: translate(0%, 50%);
   box-shadow: 0 0 10px 5px rgba(196, 172, 39, 0.4);
 }
 
+#reset:hover{
+  color:rgb(196, 172, 39);
+  border-color:rgb(196, 172, 39);
+  background:transparent;
+  transition:0.5s;
+}
+
 .btn-edittime {
   background-color: white;
-  border-color:#c4ac26;
+  border-color:rgb(196, 172, 39);
   margin: 0px -20px 5px -20px;
   max-width: 40%;
-  color: #c4ac26;
-  font-size: 20px;
+  color: rgb(196, 172, 39);
+  font-size: 15px;
   cursor:pointer;
   box-shadow: 0 0 10px 5px rgba(196, 172, 39, 0.4);
+  border-radius:50%;
+}
+
+.btn-edittime:hover{
+  color:rgb(196, 172, 39);
+  border-color:rgb(196, 172, 39);
+  background:transparent;
+  transition:0.5s;
 }
 
 .edittime {
@@ -89,10 +115,10 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 20px;
-  font-size:5px;
+  margin-top: 15px;
+  font-size:15px;
   width: 100%;
-  color:grey;
+  color:white;
 }
 
 #focus, #break #lbk{
@@ -102,6 +128,6 @@ html {
 #focus p, #break p, #lbk p{
   color: white;
   padding: 5px;
-  font-size:15px;
+  font-size:12px;
   border-radius:25px;
 }

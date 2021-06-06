@@ -1,0 +1,16 @@
+*{
+  font-family:comic sans MS;
+  text-align:center;
+}
+
+h2{
+  background:transparent;
+  border-radius:25px;
+}
+
+h2:hover{
+  color:grey;
+  border-color:grey;
+  background:white;
+  transition:0.5s;
+}

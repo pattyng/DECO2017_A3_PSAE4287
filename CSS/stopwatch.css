@@ -1,3 +1,6 @@
+*{
+  font-family:comic sans MS;
+}
 
 *,
 *:before,
@@ -10,7 +13,8 @@
     position: center;
     width: relative;
     background: linear-gradient(to bottom left,pink,rgb(201, 113, 212));
-    padding: 100px 40px;
+    padding: 100px 10px;
+    margin:10px;
     color: white;
     font-size: 20px;
     font-family: comic sans MS;
@@ -42,6 +46,13 @@
     cursor: pointer;
     outline: none;
     box-shadow: 0 0 20px 5px rgba(175, 95, 185, 1);
+}
+
+.timepro button:hover{
+  color:rgb(175, 95, 185);
+  border-color:white;
+  background:transparent;
+  transition:0.5s;
 }
 
 .stoptitle {
