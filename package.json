@@ -1,0 +1,25 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A useful study tool for students",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pattyng/DECO2017_A3_PSAE4287.git"
+  },
+  "keywords": [
+    "Study",
+    "online",
+    "help"
+  ],
+  "author": "Pisithpong Saeung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pattyng/DECO2017_A3_PSAE4287/issues"
+  },
+  "homepage": "https://github.com/pattyng/DECO2017_A3_PSAE4287#readme"
+}
